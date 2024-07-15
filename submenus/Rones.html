@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rones</title>
+    <link rel="stylesheet" href="/css/producto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <!--header-->
+    <header>
+        <div class="logo">
+            <img src="/images/file.png" alt="Logo Empresa"style="width: 200px;" height="200px">
+            <h1><span class="title">Estanquillo<br><span class="subtitle">La Olaya</span></span></h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit">🔍</button>
+                <button class="salir" onclick="redirigir()">
+                    <i class="fas fa-sign-out-alt"></i>
+                </button>
+                    <script>
+                        function redirigir(){
+                            window.location.href ="iniciosesion.html"
+                        }
+                    </script>
+            </div>
+        </div>
+    </header>
+    <!--navegacion-->
+    <nav class="navbar">
+        <div class="start">
+            <a href="/Inicio.html">INICIO</a>
+        </div>
+        <div class="dropdown">
+            <a href="/producto.html" class="etiquetanegra">PRODUCTOS</a>
+            <div class="dropdown-content">
+                <div class="dropdown-submenu">
+                    <a href="#">CERVEZAS</a>
+                    <div class="dropdown-subcontent">
+                        <a href="/submenus/Vidrio.html">VIDRIO</a>
+                        <a href="/submenus/lata.html">LATA</a>
+                    </div>
+                </div>
+                
+                <a href="/submenus/Aguardiente.html">AGUARDIENTES</a>
+                <a href="/submenus/Rones.html">RONES</a>
+                <a href="/submenus/Whiskys.html">WHISKYS</a>
+                <a href="/submenus/Vodkas.html">VODKAS</a>
+                <a href="/submenus/Tequilas.html">TEQUILAS</a>
+                <a href="/submenus/Vinos y Champañas.html">VINOS Y CHAMPANAS</a>
+                <a href="/submenus/Cigarrillos.html">CIGARRILLOS</a>
+                <a href="/submenus/Energizantes.html">BEBIDAS ENERGIZANTES Y AGUAS</a>
+                <a href="/submenus/Gaseosa.html">GASEOSAS</a>
+                <a href="/submenus/Jugos.html">JUGOS</a>
+                <a href="/submenus/Comestibles.html">COMESTIBLES</a>
+                <a href="/submenus/Aperitivos.html">APERITIVOS</a>
+            </div>
+        </div>
+        <div class="Venta">
+            <a href="/Venta.html">VENTAS</a>
+        </div>
+        <div class="Compras">
+            <a href="/compra.html">COMPRAS</a>
+        </div>
+        <div class="Proveedor">
+            <a href="/Provedor.html">PROVEEDORES</a>
+        </div>
+        <div class="Usuario">
+            <a href="/tablausuarios.html">USUARIOS</a>
+        </div>
+    </nav>
+    <main>
+        <section class="contenido">
+            <button class="agregar" onclick="redirigir()">
+                <i class="fas fa-plus"></i>
+            </button>
+            <script>
+                function redirigir(){
+                    window.location.href ="Crearproducto.html"
+                }
+            </script>
+            <div class="mostrador" id="mostrador">
+                <div class="fila">
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="/productos/la hechicera.png" alt="">
+                        </div>
+                        <h3 class="descripcion" id>la Hechicera </h3>
+                        <div class="detalles">
+                            <p class="cant">30 Uds.</p>
+                            <p class="precio">$ 102.800</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="/productos/dictador.png" alt="">
+                        </div>
+                        <h3 class="descripcion" id>Dictador Añejo </h3>
+                        <div class="detalles">
+                            <p class="cant">10 Uds.</p>
+                            <p class="precio">$ 1.200.800</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="/productos/parce 12 años-Photoroom.png" alt="">
+                        </div>
+                        <h3 class="descripcion" id> Parce añejo 12 años </h3>
+                        <div class="detalles">
+                            <p class="cant">300 Uds.</p>
+                            <p class="precio">$ 382.800</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="/productos/220081-Ron-Medellin-12years-750ml-Photoroom.png" alt="">
+                        </div>
+                        <h3 class="descripcion" id>Ron Medellin  </h3>
+                        <div class="detalles">
+                            <p class="cant">300 Uds.</p>
+                            <p class="precio">$ 202.800</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="/productos/viejo de caldas-Photoroom.png" alt="">
+                        </div>
+                        <h3 class="descripcion" id>Viejo Caldas </h3>
+                        <div class="detalles">
+                            <p class="cant">300 Uds.</p>
+                            <p class="precio">$ 802.800</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="/productos/parce brother blend-Photoroom.png" alt="">
+                        </div>
+                        <h3 class="descripcion" id>Parce Brothers</h3>
+                        <div class="detalles">
+                            <p class="cant">300 Uds.</p>
+                            <p class="precio">$ 702.800</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="/productos/parce 5 anos.png" alt="">
+                        </div>
+                        <h3 class="descripcion" id>Ron Parce 5 años </h3>
+                        <div class="detalles">
+                            <p class="cant">30 Uds.</p>
+                            <p class="precio">$ 805.800</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="/productos/parce 12 años-Photoroom.png" alt="">
+                        </div>
+                        <h3 class="descripcion" id>Ron Parce 12 años </h3>
+                        <div class="detalles">
+                            <p class="cant">300 Uds.</p>
+                            <p class="precio">$ 2.000.800</p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+            <div class="seleccion" id="seleccion">
+                <div class="cerrar" onclick="cerrar()">
+                    &#x2715
+                </div>
+                <div class="info">
+                    <img src="img/1.png" alt="" id="img">
+                    <h2 id="modelo">NIKE MODEL 1</h2>
+                    <p id="descripcion">Descripción Modelo 1</p>
+    
+                    <span class="precio" id="precio">$ 130</span>
+    
+                    <div class="fila">
+                        <div class="size">
+                            <label for="">SIZE</label>
+                            <select name="" id="">
+                                <option value="">40</option>
+                                <option value="">42</option>
+                                <option value="">44</option>
+                                <option value="">46</option>
+                            </select>
+                        </div>
+                        <button>AGREGAR AL CARRITO</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="pagination">
+            <a href="#" class="prev">‹ Anterior</a>
+            <a href="#" class="page active">1</a>
+            <a href="#" class="page">2</a>
+            <a href="#" class="next">Siguiente ›</a>
+        </div>
+    </main>
+       <footer>
+        <p>&copy; Licoreria La Olaya</p>
+       </footer>
+    <script src="/producto.js"></script>
+</body>
+</html>

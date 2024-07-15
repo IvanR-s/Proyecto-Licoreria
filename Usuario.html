@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    <link rel="stylesheet" href="/css/user.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <div>
+            <img src="/images/file.png" alt="Logo Empresa"style="width: 200px;" height="200px">
+            <h1><span class="title">Estanquillo<br><span class="subtitle">La Olaya</span></span></h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit">🔍</button>
+                <button class="salir" onclick="dirigir()">
+                    <i class="fas fa-sign-out-alt"></i>
+                </button>
+                    <script>
+                        function dirigir(){
+                            window.location.href ="iniciosesion.html"
+                        }
+                    </script>
+            </div>
+        </div>
+    </header>
+    
+    <!--navegacion-->
+    <nav class="navbar">
+        <div class="start">
+            <button class="startbtn">INICIO
+                <a href="Inicio.html"></a>
+            </button>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">PRODUCTOS
+                <a href="producto.html"></a>
+            </button>
+            <div class="dropdown-content">
+                <div class="dropdown-submenu">
+                    <a href="#">CERVEZAS</a>
+                    <div class="dropdown-subcontent">
+                        <a href="#">VIDRIO</a>
+                        <a href="#">LATA</a>
+                    </div>
+                </div>
+                <a href="/submenus/Aguardiente.html">AGUARDIENTES</a>
+                <a href="/submenus/Rones.html">RONES</a>
+                <a href="/submenus/Whiskys.html">WHISKYS</a>
+                <a href="/submenus/Vodkas.html">VODKAS</a>
+                <a href="/submenus/Tequilas.html">TEQUILAS</a>
+                <a href="/submenus/Vinos y Champañas.html">VINOS Y CHAMPANAS</a>
+                <a href="/submenus/Cigarrillos.html">CIGARRILLOS</a>
+                <a href="/submenus/Energizantes.html">BEBIDAS ENERGIZANTES Y AGUAS</a>
+                <a href="/submenus/Gaseosa.html">GASEOSAS</a>
+                <a href="/submenus/Jugos.html">JUGOS</a>
+                <a href="/submenus/Comestibles.html">COMESTIBLES</a>
+                <a href="/submenus/Aperitivos.html">APERITIVOS</a>
+            </div>
+        </div>
+        <div class="Venta">
+            <button class="Ventabtn">VENTAS
+                <a href="Venta.html"></a>
+            </button>
+        </div>
+        <div class="Compras">
+            <button class="Comprabtn">COMPRAS
+                <a href="compra.html"></a>
+            </button>
+        </div>
+        <div class="Proveedor">
+            <button class="Proveedorbtn">PROVEEDORES
+                <a href="Provedor.html"></a>
+            </button>
+        </div>
+        <div class="Usuario">
+            <a href="tablausuarios.html" class="etiquetanegra">USUARIOS</a>
+        </div>
+    </nav>
+    <main>
+        <div class="fondo">
+    <section class="formulariousuario">
+    <form class="myForm">
+        <h1>Registro de Usuario</h1>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" placeholder="Ingresa tu nombre" required><br><br><br>
+
+
+        <label for="lastName">Apellido:</label>
+        <input type="text" id="lastName" placeholder="Ingresa tu apellido" required><br><br><br>
+
+        <label for="lastName">Num Telefono:</label>
+        <input type="text" id="lastName" placeholder=" Ingresa Numero telefonico" required><br><br><br>
+
+        <label for="lastName">Contraseña:</label>
+        <input type="text" id="lastName" placeholder="Ingresa Contraseña" required><br><br><br>
+
+        <label for="lastName">Pregunta de Seguridad:</label>
+        <input type="text" id="lastName" placeholder="Ingresa Pregunta seguridad" required><br><br><br>
+
+        <label for="lastName">Direccion(Vivienda):</label>
+        <input type="text" id="lastName" placeholder="Ingresa Direccion" required><br><br><br>
+
+        <label for="lastName">Cargo:</label>
+        <input type="text" id="lastName" placeholder="Ingresa Cargo" required><br><br><br>
+
+        <button type="submit">Crear</button>
+        <button onclick="redirigir()">Reportes</button>
+
+        <script>
+            function redirigir() {
+            window.location.href = 'tablausuarios.html';
+        }
+        </script>
+    </form>
+</section>
+</div>
+</main>
+<footer>
+    <p>&copy; Licoreria La Olaya</p>
+   </footer>
+</body>
+</html>

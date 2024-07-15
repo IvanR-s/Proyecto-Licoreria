@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta</title>
+    <link rel="stylesheet" href="/css/venta.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <div class="logo">
+            <img src="/images/file.png" alt="Logo Empresa" style="width: 200px;" height="200px">
+            <h1><span class="title">Estanquillo<br><span class="subtitle">La Olaya</span></span></h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit">🔍</button>
+                <button class="salir" onclick="dirigir()">
+                    <i class="fas fa-sign-out-alt"></i>
+                </button>
+                    <script>
+                        function dirigir(){
+                            window.location.href ="iniciosesion.html"
+                        }
+                    </script>
+            </div>
+        </div>
+    </header>
+    <!--navegacion-->
+    <nav class="navbar">
+        <div class="start">
+            <a href="Inicio.html">INICIO</a>
+        </div>
+        <div class="dropdown">
+            <a href="producto.html">PRODUCTOS</a>
+            <div class="dropdown-content">
+                <div class="dropdown-submenu">
+                    <a href="#">CERVEZAS</a>
+                    <div class="dropdown-subcontent">
+                        <a href="/submenus/Vidrio.html">VIDRIO</a>
+                        <a href="/submenus/lata.html">LATA</a>
+                    </div>
+                </div>
+                
+                <a href="/submenus/Aguardiente.html">AGUARDIENTES</a>
+                <a href="/submenus/Rones.html">RONES</a>
+                <a href="/submenus/Whiskys.html">WHISKYS</a>
+                <a href="/submenus/Vodkas.html">VODKAS</a>
+                <a href="/submenus/Tequilas.html">TEQUILAS</a>
+                <a href="/submenus/Vinos y Champañas.html">VINOS Y CHAMPANAS</a>
+                <a href="/submenus/Cigarrillos.html">CIGARRILLOS</a>
+                <a href="/submenus/Energizantes.html">BEBIDAS ENERGIZANTES Y AGUAS</a>
+                <a href="/submenus/Gaseosa.html">GASEOSAS</a>
+                <a href="/submenus/Jugos.html">JUGOS</a>
+                <a href="/submenus/Comestibles.html">COMESTIBLES</a>
+                <a href="/submenus/Aperitivos.html">APERITIVOS</a>
+            </div>
+        </div>
+        <div class="Venta">
+            <a href="Venta.html" class="etiquetanegra">VENTAS</a>
+        </div>
+        <div class="Compras">
+            <a href="compra.html">COMPRAS</a>
+        </div>
+        <div class="Proveedor">
+            <a href="Provedor.html">PROVEEDORES</a>
+        </div>
+        <div class="Usuario">
+            <a href="tablausuarios.html">USUARIOS</a>
+        </div>
+    </nav>
+    <main>
+        <div class="fondo">
+            <section class="formularioventa">
+            <form class="myForm">
+                <h1>Registro de Venta</h1>
+                    <label for="name">Nombre:</label><br>
+                    <input type="text" id="name" placeholder="Ingrese nombre del cliente" required><br><br><br>
+                    <label for="Documento">Documento:</label><br>
+                    <input type="text" id="documento" placeholder="Ingresa el documento" required><br><br><br>
+        
+                    <label for="Nameproducto">Producto:</label><br>
+                    <input type="text" id="Nameproducto" placeholder=" Ingresa Producto" required><br><br><br>
+        
+                    <label for="cantidad">Cantidad:</label><br>
+                    <input type="text" id="cantidad" placeholder="Ingresa Cantidad" required><br><br><br>
+        
+                    <label for="precioU">Precio Unitario:</label><br>
+                    <input type="text" id="precioU" placeholder="Ingresa Precio" required><br><br><br>
+        
+                    <label for="fecha">Fecha:</label><br>
+                    <input type="text" id="fecha" placeholder="" required><br><br><br>
+                
+                    <label for="Cargo">Cargo:</label><br>
+                    <input type="text" id="precioU" placeholder="Ingresa Cargo" required><br><br><br>
+                <button type="submit">Registrar</button>
+                <button type="button" onclick="location.href='/ruta_para_reportes'">Reportes</button>
+        
+            </form>
+        </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Licoreria La Olaya</p>
+    </footer>
+
+    <script>
+        // Script para establecer la fecha actual en el campo de fecha
+        window.onload = function() {
+            var today = new Date();
+            var dd = String(today.getDate()).padStart(2, '0');
+            var mm = String(today.getMonth() + 1).padStart(2, '0'); // Enero es 0
+            var yyyy = today.getFullYear();
+
+            today = yyyy + '-' + mm + '-' + dd;
+            document.getElementById('fecha').value = today;
+        }
+    </script>
+</body>
+</html>

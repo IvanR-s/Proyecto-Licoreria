@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios/Registro</title>
+    <link rel="stylesheet" href="/css/tablausuario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <div>
+            <img src="/images/file.png" alt="Logo Empresa"style="width: 200px;" height="200px">
+            <h1><span class="title">Estanquillo<br><span class="subtitle">La Olaya</span></span></h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit">🔍</button>
+                <button class="salir" onclick="dirigir()">
+                    <i class="fas fa-sign-out-alt"></i>
+                </button>
+                    <script>
+                        function dirigir(){
+                            window.location.href ="iniciosesion.html"
+                        }
+                    </script>
+            </div>
+        </div>
+    </header>
+    
+    <!--navegacion-->
+    <nav class="navbar">
+        <div class="start">
+            <a href="Inicio.html">INICIO</a>
+        </div>
+        <div class="dropdown">
+            <a href="producto.html">PRODUCTOS</a>
+            <div class="dropdown-content">
+                <div class="dropdown-submenu">
+                    <a href="#">CERVEZAS</a>
+                    <div class="dropdown-subcontent">
+                        <a href="/submenus/Vidrio.html">VIDRIO</a>
+                        <a href="/submenus/lata.html">LATA</a>
+                    </div>
+                </div>
+                
+                <a href="/submenus/Aguardiente.html">AGUARDIENTES</a>
+                <a href="/submenus/Rones.html">RONES</a>
+                <a href="/submenus/Whiskys.html">WHISKYS</a>
+                <a href="/submenus/Vodkas.html">VODKAS</a>
+                <a href="/submenus/Tequilas.html">TEQUILAS</a>
+                <a href="/submenus/Vinos y Champañas.html">VINOS Y CHAMPANAS</a>
+                <a href="/submenus/Cigarrillos.html">CIGARRILLOS</a>
+                <a href="/submenus/Energizantes.html">BEBIDAS ENERGIZANTES Y AGUAS</a>
+                <a href="/submenus/Gaseosa.html">GASEOSAS</a>
+                <a href="/submenus/Jugos.html">JUGOS</a>
+                <a href="/submenus/Comestibles.html">COMESTIBLES</a>
+                <a href="/submenus/Aperitivos.html">APERITIVOS</a>
+            </div>
+        </div>
+        <div class="Venta">
+            <a href="Venta.html">VENTAS</a>
+        </div>
+        <div class="Compras">
+            <a href="compra.html">COMPRAS</a>
+        </div>
+        <div class="Proveedor">
+            <a href="Provedor.html">PROVEEDORES</a>
+        </div>
+        <div class="Usuario">
+            <a href="tablausuarios.html" class="etiquetanegra">USUARIOS</a>
+        </div>
+    </nav>
+</head>
+<body>
+    <main>
+        <div class="tabla">
+    <section class="fondo2">
+    <title>Tabla de Usuarios</title>
+    <h1>USUARIOS</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Documento</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Teléfono</th>
+                <th>Correo</th>
+                <th>Dirección</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>12345678</td>
+                <td>Juan</td>
+                <td>Pérez</td>
+                <td>555-123-4567</td>
+                <td>juan@example.com</td>
+                <td>Calle Principal 123</td>
+            </tr>
+            <tr>
+                <td>5218466564</td>
+                <td>perla</td>
+                <td>Pérez</td>
+                <td>555-123-4567</td>
+                <td>perla@example.com</td>
+                <td>Calle Principal 321</td>
+            </tr>
+            <tr>
+                <td>1454146814546</td>
+                <td>Ramiro</td>
+                <td>mocho</td>
+                <td>555-123-4567</td>
+                <td>mocho@example.com</td>
+                <td>Calle Principal 321</td>
+            </tr>
+            
+            <section class="sec">
+                <button class="Buscars">Buscar</button>
+                <button class="Modificars">Modificar</button>
+                <button class="Agregars" onclick="redirigir()">Agregar</button>
+                <script>
+                    function redirigir() {
+                    window.location.href = 'Usuario.html';
+                    }
+                </script>
+                <button class="Permisos">Permisos</button>
+            </section>
+            
+            <!-- Agrega más filas con datos de otros usuarios aquí -->
+        </tbody>
+    </table>
+</section>
+</div>
+</main>
+<footer>
+    <p>&copy; Licoreria La Olaya</p>
+   </footer>
+   <script></script>
+</body>
+</html>

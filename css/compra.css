@@ -1,0 +1,53 @@
+@import "color.css";
+@import "commont.css";
+@import "header.css";
+@import "navbar.css";
+@import "aside.css";
+@import "content.css";
+@import "footer.css";
+@import "footer.css";
+@import "producto.css";
+@import "styles.css";
+
+.formulariocompra{
+    display: flex;
+    justify-content: space-around;
+    border: 5px #1C1C1C;
+    color: white;
+    margin-left: -200px;
+    margin-top: 50p;
+}
+.fondo{
+    background-color: #1C1C1C;
+    padding: 20px;
+    width: 600px;
+    height: 500px;
+    margin-left: 390px;
+    
+    margin-top: 50px;
+    margin-bottom: -70px;
+    color: white;
+}
+.formulariocompra input{
+    width: 100%;
+    padding: 2px;
+    margin-bottom: 1px;
+    border: none;
+    border-radius: 4px;
+}
+.formulariocompra h1{
+    margin-top: -10px;
+    font-size: 2.0em;
+    color: #D1AE6E;
+}
+.formulariocompra button{
+    background-color: #D1AE6E;
+    border: none;
+    border-radius: 3;
+    cursor: pointer;
+}
+@media screen and (max-width:700px){/*permite redimencional para que el menu se muestre en columna responsve*/
+    .navbar, .row{
+        flex-direction:column;
+    }
+}

@@ -1,0 +1,255 @@
+@import "color.css";
+@import "commont.css";
+@import "header.css";
+@import "aside.css";
+@import "content.css";
+@import "footer.css";
+@import "producto.css";
+@import "compra.css";
+@import "venta.css";
+@import "tablausuario.css";
+@import "user.css";
+@import "proveedor.css";
+@import "navbar.css";
+
+.tabla {
+    width: 90%;
+    margin-left: 350px;
+    border-collapse: collapse;
+}
+.tabla th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    background-color: white;
+    color: black;
+}
+.tabla h1{
+    font-size: 2.0em;
+    color: #D1AE6E;
+}
+.tabla th {
+    background-color: #D1AE6E;
+    color: black;
+}
+.fondo2{
+    background-color: #1C1C1C;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin-left: 45px;
+    margin-top: 50px;
+    margin-bottom: -70px;
+    color: white;
+}
+.Agregars{
+    margin-top: -30px;
+    position: absolute;
+    margin-right: 0px;
+    margin-left: 525px;
+    z-index: 1;
+    height: 20px;
+    background-color: #D1AE6E;
+    cursor: pointer;
+    border: none;
+}
+.Modificars{
+    margin-top: -30px;
+    position: absolute;
+    margin-right: 0px;
+    margin-left: 450px;
+    z-index: 1; 
+    height: 20px;
+    cursor: pointer;
+    background-color: #D1AE6E;
+    border: none;
+}
+.Buscars{
+    margin-top: -30px;
+    position: absolute;
+    margin-right: 0px;
+    margin-left: 600px;
+    z-index: 1; 
+    background-color: #D1AE6E;
+    height: 20px;
+    cursor: pointer;
+    border: none;
+}
+section.button.Buscars{
+    margin-top: 100px;
+    margin-left: -500PX ;
+
+}
+.Permisos{
+    margin-top: -30px;
+    position: absolute;
+    margin-right: 0px;
+    margin-left: 665px;
+    z-index: 1; 
+    height: 20px;
+    cursor: pointer;
+    background-color: #D1AE6E;
+    border: none;
+}
+.sec{
+    margin-top: -10px;
+}
+
+
+/* Dropdown button */
+.startbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    text-align: center;
+    cursor: pointer;
+}
+.Ventabtn{
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+} 
+.Comprabtn{
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+} 
+.Proveedorbtn{
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+} 
+.Usuariobtn{
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+} 
+
+
+
+/* Dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* button  hover */
+.dropdown:hover .dropbtn {
+    background-color: #111111;
+    color: white;
+    cursor: pointer;
+}
+
+/* Dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 15px;
+}
+
+/* hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown-submenu {
+    position: relative;
+}
+
+/* Submenu */
+.dropdown-subcontent {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/*  hover */
+.dropdown-submenu:hover .dropdown-subcontent {
+    display: block;
+}
+
+/* Submenu */
+.dropdown-subcontent a {    
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/*  hover */
+.dropdown-subcontent a:hover {
+    background-color: #ddd;
+}
+
+/* menu  hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width:700px){/*permite redimencional para que el menu se muestre en columna responsve*/
+    .navbar, .row{
+        flex-direction:column;
+    }
+}

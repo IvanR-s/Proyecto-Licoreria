@@ -1,0 +1,17 @@
+.navbar{
+    display:flex; /*permite establecer cómo crece o decrece un elemento flexible dentro del contenedor en relación a los demás.*/
+     justify-content: center;/*justifica contenido al centro*/
+    background-color:#1C1C1C;
+    align-items: center;
+}
+.navbar a{
+ color:white;
+ padding: 12px 20px;
+ text-decoration: none;
+ font-size: 20px;
+ text-align: center;
+ display: block;
+}
+.navbar a:hover{/*produce un cambio al situar el ratón encima de un elemento.*/
+   background-color: #111111;
+}

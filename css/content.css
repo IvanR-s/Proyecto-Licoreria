@@ -1,0 +1,87 @@
+.row{
+    display: flex;/*ayuda a colocar las cajas como si fueran celdas de tablas, con un comportamiento predecible y adaptable.*/
+    flex-wrap: wrap;/*especifica si los elementos "hijos" están obligados a permanecer en una misma línea o pueden fluir en varias líneas*/
+}
+
+main{
+    flex: 70%;  /*método de diseño de página unidimensional para compaginar elementos en filas o columnas*/
+   
+}
+main h2{
+    text-transform: uppercase;/*permite que el texto se transforme por alguna de cuatro propiedades: Capitalize (escribe en mayúsculas el primer carácter de cada palabra) UPPERCASE (escribe en mayúsculas todos los caracteres de cada palabra) lowercase (usa letras pequeñas para todos los caracteres de cada palabra)*/
+    margin-top: 40px;
+    color: var(--color-primary);
+}
+main{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main .read-more{
+    color: white;
+    text-decoration: none;
+    background-color: var(--color-primary);
+    border-radius: 10px;
+}
+main .read-more:hover{
+    background-color: var(--color-gray-light #000000);
+}
+#more-post{
+    display: block;/*elemento en bloque*/ 
+    color: var(--color-primary);
+    margin-top: 40px;
+    text-align: center;
+}
+
+#more-post:hover{
+    
+    color: var(--color-primary-dark)
+    
+}
+
+.categories, .featured-categories {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border: 5px #1C1C1C;
+    color: white;
+}
+
+.category, .product {
+    background-color: #1C1C1C;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    color: white;
+}
+.categories h2{
+    color: white;
+}
+.hero {
+    position: absolute;
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 50px 20px;
+    margin-left: 620px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    color: white;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: white;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background-color: #e69a07;
+    border: none;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+}
